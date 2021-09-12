@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "ScoreDashboard.ConsoleApp": {
+      "commandName": "Project"
+    }
+  }
+}
