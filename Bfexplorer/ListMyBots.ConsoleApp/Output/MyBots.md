@@ -1,628 +1,628 @@
 # Place Bet
-**AllowPlacingBetInPlay**
+##### AllowPlacingBetInPlay
 If you want to allow bet placing when a market is in-play then set this parameter to True.
-**AtInPlayKeepBet**
+##### AtInPlayKeepBet
 When market is turned at in-play all unmatched bets are canceled by betfair. Setting this parameter to True will keep your bets on the market. Betfair does not support keep the bet option for all in-play markets.
-**BetType**
+##### BetType
 The type of your bet, back or lay.
-**Odds**
+##### Odds
 The odds you want to place your bet at. If you want to place your bet on the exact odds set the parameter PlaceBetInAllowedOddsRange to False.
-**MinimumOdds**
+##### MinimumOdds
 Minimum odds you are willing to take. When you set this parameter you must set the parameter PlaceBetInAllowedOddsRange to True.
-**MaximumOdds**
+##### MaximumOdds
 Maximum odds you are willing to take. When you set this parameter you must set the parameter PlaceBetInAllowedOddsRange to True.
-**PlaceBetInAllowedOddsRange**
+##### PlaceBetInAllowedOddsRange
 Set to True if you want to place your bet in allowed odds range only. One of parameters MinimumOdds or MaximumOdds must be set too.
-**MinimumOddsDifference**
+##### MinimumOddsDifference
 The minimum odds difference (between best offer lay odds and best offered back odds, in ticks) to place your bet.
-**MaximumOddsDifference**
+##### MaximumOddsDifference
 The maximum odds difference (between best offer lay odds and best offered back odds, in ticks) to place your bet.
-**OfferMyBet**
+##### OfferMyBet
 Set to True if you want to offer your bet on an opposite bet side. When backing your bet will be offered on the best lay odds.
-**PriceImprovement**
+##### PriceImprovement
 Improve your odds (price). For instance if you back a selection offering your bet and the best lay odds is 2.02 then PriceImprovement parameter set to 1 will adjust your odds to 2.04.
-**ChaseOddsTimeout**
+##### ChaseOddsTimeout
 If your bet is not fully matched and odds changes the bot chases the offered odds. You can postpone the odds chasing setting this timeout parameter.
-**Stake**
+##### Stake
 Your stake amount you want to bet. When laying your liability is different, to lay with the stake liability set the parameter StakeType to Liability.
-**StakeType**
+##### StakeType
 Stake type: Stake, Liability, TickProfit, NetTickProfit
-**PlaceBetAtTime**
+##### PlaceBetAtTime
 Place bet at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet will be placed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be placed 5 minutes after the event start time.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Be the First in Queue
-**AllowPlacingBetInPlay**
+##### AllowPlacingBetInPlay
 If you want to allow bet placing when a market is in-play then set this parameter to True.
-**AtInPlayKeepBet**
+##### AtInPlayKeepBet
 When market is turned at in-play all unmatched bets are canceled by betfair. Setting this parameter to True will keep your bets on the market. Betfair does not support keep the bet option for all in-play markets.
-**BetType**
+##### BetType
 The type of your bet, back or lay.
-**MinimumOdds**
+##### MinimumOdds
 Minimum odds you are willing to take. When you set this parameter you must set the parameter PlaceBetInAllowedOddsRange to True.
-**MaximumOdds**
+##### MaximumOdds
 Maximum odds you are willing to take. When you set this parameter you must set the parameter PlaceBetInAllowedOddsRange to True.
-**PlaceBetInAllowedOddsRange**
+##### PlaceBetInAllowedOddsRange
 Set to True if you want to place your bet in allowed odds range only. One of parameters MinimumOdds or MaximumOdds must be set too.
-**MinimumOddsDifference**
+##### MinimumOddsDifference
 The minimum odds difference (between best offer lay odds and best offered back odds, in ticks) to place your bet.
-**MaximumOddsDifference**
+##### MaximumOddsDifference
 The maximum odds difference (between best offer lay odds and best offered back odds, in ticks) to place your bet.
-**PriceImprovement**
+##### PriceImprovement
 Improve your odds (price). For instance if you back a selection offering your bet and the best lay odds is 2.02 then PriceImprovement parameter set to 1 will adjust your odds to 2.04.
-**MinimumBetStakeToChase**
+##### MinimumBetStakeToChase
 If your bet is not fully matched and odds changes the bot chase the odds so your bet would be always the first in the queue. You can avoid the odds chasing for bet offers which stake amount is less than value set by this parameter.
-**ChaseOddsTimeout**
+##### ChaseOddsTimeout
 If your bet is not fully matched and odds changes the bot chases the offered odds. You can postpone the odds chasing setting this timeout parameter.
-**Stake**
+##### Stake
 Your stake amount you want to bet. When laying your liability is different, to lay with the stake liability set the parameter StakeType to Liability.
-**StakeType**
+##### StakeType
 Stake type: Stake, Liability, TickProfit, NetTickProfit
-**PlaceBetAtTime**
+##### PlaceBetAtTime
 Place bet at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet will be placed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be placed 5 minutes after the event start time.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Fill or Kill
-**AtInPlayKeepBet**
+##### AtInPlayKeepBet
 When market is turned at in-play all unmatched bets are canceled by betfair. Setting this parameter to True will keep your bets on the market. Betfair does not support keep the bet option for all in-play markets.
-**BetType**
+##### BetType
 The type of your bet, back or lay.
-**Odds**
+##### Odds
 The odds you want to place your bet at. Set to 0 when you want to offer your bet at best offered odds.
-**Stake**
+##### Stake
 Your stake amount you want to bet. When laying your liability is different, to lay with the stake liability set the parameter StakeType to Liability.
-**StakeType**
+##### StakeType
 Stake type: Stake, Liability, TickProfit, NetTickProfit
-**BetMatchingTimeout**
+##### BetMatchingTimeout
 If your bet is not fully matched, the bet will be cancelled after this timeout expires.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Close Selection Bet Position
-**ProfitLossType**
+##### ProfitLossType
 Set your profit and loss target type: money, ticks or percentage.
-**Profit**
+##### Profit
 The profit target at which you want to close your bet position.
-**Loss**
+##### Loss
 The loss target at which you want to close your bet position.
-**HedgingEnabled**
+##### HedgingEnabled
 Set to True if you want to hedge your bet position.
-**WaitForValidBetPosition**
+##### WaitForValidBetPosition
 If set to True bot will wait for valid bet position to be opened.
-**CheckingLastPriceTraded**
+##### CheckingLastPriceTraded
 Set to True if you want to check if offered price was really matched in price range set by the parameter: CheckingLastPriceTradedDifference.
-**CheckingLastPriceTradedDifference**
+##### CheckingLastPriceTradedDifference
 Set allowed price/odds difference in ticks from the last price traded when closing bet position in loss.
-**OfferMyBet**
+##### OfferMyBet
 Set to True if you want to offer your bet on an opposite bet side. When backing your bet will be offered on the best lay odds.
-**ClosePositionImmediately**
+##### ClosePositionImmediately
 Set this parameter to True if you want to place your closing bet immediately.
-**BetMatchingTimeout**
+##### BetMatchingTimeout
 If your bet is not fully matched, the bet will be cancelled after this timeout expires.
-**ClosePositionAtTime**
+##### ClosePositionAtTime
 Close your bet position at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet position will be closed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be closed 5 minutes after the event start time.
-**UseShareBetPosition**
+##### UseShareBetPosition
 Use the shared bet position.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Close Selection Bet Position at Odds
-**Odds**
+##### Odds
 The profit target at which you want to close your bet position.
-**HedgingEnabled**
+##### HedgingEnabled
 Set to True if you want to hedge your bet position.
-**CheckingLastPriceTraded**
+##### CheckingLastPriceTraded
 Set to True if you want to check if offered price was really matched in price range set by the parameter: CheckingLastPriceTradedDifference.
-**CheckingLastPriceTradedDifference**
+##### CheckingLastPriceTradedDifference
 Set allowed price/odds difference in ticks from the last price traded when closing bet position in loss.
-**BetMatchingTimeout**
+##### BetMatchingTimeout
 If your bet is not fully matched, the bet will be cancelled after this timeout expires.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Place Bet and Close Selection Bet Position
-#### OpenBetPosition
-**AllowPlacingBetInPlay**
+### OpenBetPosition
+##### AllowPlacingBetInPlay
 If you want to allow bet placing when a market is in-play then set this parameter to True.
-**AtInPlayKeepBet**
+##### AtInPlayKeepBet
 When market is turned at in-play all unmatched bets are canceled by betfair. Setting this parameter to True will keep your bets on the market. Betfair does not support keep the bet option for all in-play markets.
-**BetType**
+##### BetType
 The type of your bet, back or lay.
-**Odds**
+##### Odds
 The odds you want to place your bet at. If you want to place your bet on the exact odds set the parameter PlaceBetInAllowedOddsRange to False.
-**MinimumOdds**
+##### MinimumOdds
 Minimum odds you are willing to take. When you set this parameter you must set the parameter PlaceBetInAllowedOddsRange to True.
-**MaximumOdds**
+##### MaximumOdds
 Maximum odds you are willing to take. When you set this parameter you must set the parameter PlaceBetInAllowedOddsRange to True.
-**PlaceBetInAllowedOddsRange**
+##### PlaceBetInAllowedOddsRange
 Set to True if you want to place your bet in allowed odds range only. One of parameters MinimumOdds or MaximumOdds must be set too.
-**MinimumOddsDifference**
+##### MinimumOddsDifference
 The minimum odds difference (between best offer lay odds and best offered back odds, in ticks) to place your bet.
-**MaximumOddsDifference**
+##### MaximumOddsDifference
 The maximum odds difference (between best offer lay odds and best offered back odds, in ticks) to place your bet.
-**OfferMyBet**
+##### OfferMyBet
 Set to True if you want to offer your bet on an opposite bet side. When backing your bet will be offered on the best lay odds.
-**PriceImprovement**
+##### PriceImprovement
 Improve your odds (price). For instance if you back a selection offering your bet and the best lay odds is 2.02 then PriceImprovement parameter set to 1 will adjust your odds to 2.04.
-**ChaseOddsTimeout**
+##### ChaseOddsTimeout
 If your bet is not fully matched and odds changes the bot chases the offered odds. You can postpone the odds chasing setting this timeout parameter.
-**Stake**
+##### Stake
 Your stake amount you want to bet. When laying your liability is different, to lay with the stake liability set the parameter StakeType to Liability.
-**StakeType**
+##### StakeType
 Stake type: Stake, Liability, TickProfit, NetTickProfit
-**PlaceBetAtTime**
+##### PlaceBetAtTime
 Place bet at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet will be placed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be placed 5 minutes after the event start time.
-#### CloseBetPosition
-**ProfitLossType**
+### CloseBetPosition
+##### ProfitLossType
 Set your profit and loss target type: money, ticks or percentage.
-**Profit**
+##### Profit
 The profit target at which you want to close your bet position.
-**Loss**
+##### Loss
 The loss target at which you want to close your bet position.
-**HedgingEnabled**
+##### HedgingEnabled
 Set to True if you want to hedge your bet position.
-**CheckingLastPriceTraded**
+##### CheckingLastPriceTraded
 Set to True if you want to check if offered price was really matched in price range set by the parameter: CheckingLastPriceTradedDifference.
-**CheckingLastPriceTradedDifference**
+##### CheckingLastPriceTradedDifference
 Set allowed price/odds difference in ticks from the last price traded when closing bet position in loss.
-**OfferMyBet**
+##### OfferMyBet
 Set to True if you want to offer your bet on an opposite bet side. When backing your bet will be offered on the best lay odds.
-**ClosePositionImmediately**
+##### ClosePositionImmediately
 Set this parameter to True if you want to place your closing bet immediately.
-**BetMatchingTimeout**
+##### BetMatchingTimeout
 If your bet is not fully matched, the bet will be cancelled after this timeout expires.
-**ClosePositionAtTime**
+##### ClosePositionAtTime
 Close your bet position at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet position will be closed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be closed 5 minutes after the event start time.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Tick Offset
-**BetType**
+##### BetType
 The type of your bet, back or lay.
-**Odds**
+##### Odds
 The odds you want to place your bet at. Set to 0 when you want to offer your bet at best offered odds.
-**Stake**
+##### Stake
 Your stake amount you want to bet. When laying your liability is different, to lay with the stake liability set the parameter StakeType to Liability.
-**StakeType**
+##### StakeType
 Stake type: Stake, Liability, TickProfit, NetTickProfit
-**Profit**
+##### Profit
 The profit target at which you want to close your bet position.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Scratch Trading
-**Stake**
+##### Stake
 Your stake amount you want to bet. When laying your liability is different, to lay with the stake liability set the parameter StakeType to Liability.
-**StakeType**
+##### StakeType
 Stake type: Stake, Liability, TickProfit, NetTickProfit
-**Liquidity**
+##### Liquidity
 Trigger bet placing when on both sides there is offered amount.
-**Scratch**
+##### Scratch
 Scratch the trade if on the closing bet position there is offered amount.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Trailing Stop Loss
-**Loss**
+##### Loss
 The number of ticks to prevent further loss of a profitable bet position. Once a bet position losses its best profit position then your bet position is closed, but only when in a profit.
-**HedgingEnabled**
+##### HedgingEnabled
 Set to True if you want to hedge your bet position.
-**BetMatchingTimeout**
+##### BetMatchingTimeout
 If your bet is not fully matched, the bet will be cancelled after this timeout expires.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Close Market Bet Position
-**Profit**
+##### Profit
 The profit target at which you want to close your bet position.
-**Loss**
+##### Loss
 The loss target at which you want to close your bet position.
-**ProfitOrLossInPercentage**
+##### ProfitOrLossInPercentage
 Set this parameter to True if you want to use percentage values for profit and loss targets.
-**WaitForValidBetPosition**
+##### WaitForValidBetPosition
 If set to True bot will wait for valid bet position to be opened.
-**BetMatchingTimeout**
+##### BetMatchingTimeout
 If your bet is not fully matched, the bet will be cancelled after this timeout expires.
-**CheckingLastPriceTraded**
+##### CheckingLastPriceTraded
 Set to True if you want to check if offered price was really matched in price range set by the parameter: CheckingLastPriceTradedDifference.
-**CheckingLastPriceTradedDifference**
+##### CheckingLastPriceTradedDifference
 Set allowed price/odds difference in ticks from the last price traded when closing bet position in loss.
-**ClosePositionAtTime**
+##### ClosePositionAtTime
 Close your bet position at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet position will be closed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be closed 5 minutes after the event start time.
-**AllowBotExecutionTermination**
+##### AllowBotExecutionTermination
 Set to True if you allow the bot execution termination before closing the market bet position.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Execute on Selections
-**BotName**
+##### BotName
 The bot name you want to execute.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**OnSelections**
+##### OnSelections
 Selections on which you want to execute your bot (for instance: 1,2,4). If you do not type any selections the action bot will be execute on all selections.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Execute Bots
-**BotNames**
+##### BotNames
 The bot names you want to execute (for instance: bot1;bot2).
-**UseLadderParameters**
+##### UseLadderParameters
 Use the ladder parameters: BetType, Price and Stake to update your action bot.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Execute on Associated Market
-**BotName**
+##### BotName
 The bot name you want to execute.
-**MarketName**
+##### MarketName
 Set if you want to execute the action bot on an associated market, for instance: OVER_UNDER_25.
-**ExecutionTimeout**
+##### ExecutionTimeout
 Set to postpone the bot execution.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Execute Till Target Profit
-**BotName**
+##### BotName
 The bot name you want to execute.
-**TargetProfit**
+##### TargetProfit
 The bot executes your action bot till the target profit is reached.
-**TargetLoss**
+##### TargetLoss
 The bot executes your action bot till the target loss is reached.
-**ResetStakingPlan**
+##### ResetStakingPlan
 Reset the staking plan after loses.
-**MartingaleStakeFactor**
+##### MartingaleStakeFactor
 Add previous loses to my stake.
-**ExecuteAtTime**
+##### ExecuteAtTime
 If set the action bot will be executed at time span calculated from the official event start time. If you set this parameter to -0:05:00 then your bet will be placed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be placed 5 minutes after the event start time.
-**StopExecutionAtTime**
+##### StopExecutionAtTime
 If a previous betting result is not known till this time the bot will stop its execution.
-**StrategyID**
+##### StrategyID
 Use to assign the unique strategy identification for concurrently executed strategies.
-**UseShowResultSummary**
+##### UseShowResultSummary
 Show the result summary for diagnostic purposes.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # If Then Else
-**IfThenCriteria**
+##### IfThenCriteria
 Set criteria to execute the bot set by the parameter IfThenBotName.
-**IfThenBotName**
+##### IfThenBotName
 If criteria set by the parameter IfThenCriteria are evaluated to be True, the bot is executed.
-**IfElseCriteria**
+##### IfElseCriteria
 Set criteria to execute the bot set by the parameter IfElseBotName.
-**IfElseBotName**
+##### IfElseBotName
 If criteria set by the parameter IfElseCriteria are evaluated to be True, the bot is executed.
-**EvaluateIfCriteriaOnlyOnce**
+##### EvaluateIfCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the "If" criteria only once.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Sequence Execution
-**BotNames**
+##### BotNames
 The bot names you want to execute (for instance: bot1;bot2).
-**ShareBetPosition**
+##### ShareBetPosition
 Use the shared bet position.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Concurrent Execution
-**BotNames**
+##### BotNames
 The bot names you want to execute (for instance: bot1;bot2).
-**EndExecutionIfAnyBotEnds**
+##### EndExecutionIfAnyBotEnds
 Force the rest of action bots execution to be ended, if any of bots ends its execution.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Repeat Until
-**BotName**
+##### BotName
 The bot name you want to execute.
-**RepeatUntilParameter**
+##### RepeatUntilParameter
 The condition type evaluated for each iteration until target value is reached.
-**TargetValue**
+##### TargetValue
 The target value, see the parameter: RepeatUntilParameter.
-**NextIterationTimeout**
+##### NextIterationTimeout
 Set to postpone the next iteration.
-**StopAtTime**
+##### StopAtTime
 Stop the repeat operation at the time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then repeat operation will be stopped 5 minutes before the official event start time. The positive value 0:05:00 means that repeat operation will be stopped 5 minutes after the event start time.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Execute Trigger Bot
-**TriggerParameters**
+##### TriggerParameters
 The bot trigger parameters, for instance: Stake:100.0;BetType:BetType.Back
-**TriggerFilePathName**
+##### TriggerFilePathName
 The bot trigger full file path name, for instance: C:\MyTriggers\MyTestTriger.dll
-**BotName**
+##### BotName
 The bot name you want to execute.
-**UseLadderParameters**
+##### UseLadderParameters
 Use the ladder parameters: BetType, Price and Stake to update your action bot.
-**UseMyStrategyResults**
+##### UseMyStrategyResults
 Use my strategy results.
-**AllowBotExecutionTermination**
+##### AllowBotExecutionTermination
 Set to True if you allow the bot execution termination.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Football Bot
-**BotName**
+##### BotName
 The bot name you want to execute.
-**MarketName**
+##### MarketName
 Set if you want to execute the action bot on an associated market, for instance: OVER_UNDER_25.
-**StartCriteria**
+##### StartCriteria
 Set the start criteria to be evaluated to trigger the action bot execution set by the parameter BotName. The criteria parameters are: MatchTime, Score and ScoreDifference. The score values are in the following format: 2 - 1
-**StopCriteria**
+##### StopCriteria
 Set the stop criteria to be evaluated to stop football bot execution. The criteria parameters are: MatchTime, Score and ScoreDifference. The score values are in the following format: 2 - 1
-**ExecutionTimeout**
+##### ExecutionTimeout
 Set to postpone the bot execution.
-**ShowScore**
+##### ShowScore
 Show score in the output view for diagnostic purposes.
-**ShowMatchCriteria**
+##### ShowMatchCriteria
 Show the match criteria in the output view for diagnostic purposes.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Tennis Bot
-**BotName**
+##### BotName
 The bot name you want to execute.
-**ExecuteOnPlayer**
+##### ExecuteOnPlayer
 Execute the action bot on the player.
-**PointsScore**
+##### PointsScore
 The points score (the mandatory parameter) to trigger the action bot you set by parameter: BotName.
-**GamesScore**
+##### GamesScore
 The games score to trigger the action bot you set by parameter: BotName.
-**SetsScore**
+##### SetsScore
 The sets score to trigger the action bot you set by parameter: BotName.
-**PreviousSetIndex**
+##### PreviousSetIndex
 The previous set index, for instance 1 for the first set, if not used set to 0.
-**PreviousSetGamesScore**
+##### PreviousSetGamesScore
 The previous set games score to trigger the action bot you set by parameter: BotName.
-**ScoreUpdateInterval**
+##### ScoreUpdateInterval
 The score update interval in seconds.
-**UseWebApi**
+##### UseWebApi
 Use the betfair web api to update live score data.
-**ShowScore**
+##### ShowScore
 Show score in the output view for diagnostic purposes.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Stop Bots and Cancel Bets
-**StopRunningBots**
+##### StopRunningBots
 Set to True if you want to stop all running bots and cancel unmatched bets.
-**StopAtTime**
+##### StopAtTime
 Stop market monitoring at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet will be placed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be placed 5 minutes after the event start time.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Trailing Stop Loss on Market
-**Loss**
+##### Loss
 The trailing stop loss to prevent further loss of a profitable bet position. Once a bet position losses its best profit position then your bet position is closed, but only when in a profit.
-**ProfitOrLossInPercentage**
+##### ProfitOrLossInPercentage
 Set this parameter to True if you want to use percentage values for profit and loss targets.
-**WaitForValidBetPosition**
+##### WaitForValidBetPosition
 If set to True bot will wait for valid bet position to be opened.
-**BetMatchingTimeout**
+##### BetMatchingTimeout
 If your bet is not fully matched, the bet will be cancelled after this timeout expires.
-**ClosePositionAtTime**
+##### ClosePositionAtTime
 Close your bet position at time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then your bet position will be closed 5 minutes before the official event start time. The positive value 0:05:00 means that your bet will be closed 5 minutes after the event start time.
-#### ShowDebugInfo
-**EvaluateEntryCriteriaOnlyOnce**
+### ShowDebugInfo
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Cancel Bots on Selection
-**BotNames**
+##### BotNames
 The bot names you want to cancel (for instance: bot1;bot2).
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Place Dutching Bets
-**BetType**
+##### BetType
 The type of your bet, back or lay.
-**TargetValue**
+##### TargetValue
 Set the target value, so required profit or total stake depending on what you set by parameter: DutchingType.
-**ChaseOddsTimeout**
+##### ChaseOddsTimeout
 If your bet is not fully matched and odds changes the bot chases the offered odds. You can postpone the odds chasing setting this timeout parameter.
-**DutchingType**
+##### DutchingType
 Set the dutching type, required profit or total stake.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**NumberOfSelections**
+##### NumberOfSelections
 Set the number of selections you want to dutch.
-**OnSelections**
+##### OnSelections
 Selections on which you want to place dutch bets (for instance: 1,2,4). If you do not type any selections the selections will be defined by parameter: NumberOfSelections.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Execute at Time
-**BotName**
+##### BotName
 The bot name you want to execute.
-**TimeSpanType**
+##### TimeSpanType
 Set to RelativeToStartTime if you want to start the action bot at time relative to the official market start time.
-**StartTimeSpan**
+##### StartTimeSpan
 Start the bot execution at the time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then repeat operation will be stopped 5 minutes before the official event start time. The positive value 0:05:00 means that repeat operation will be stopped 5 minutes after the event start time.
-**StopTimeSpan**
+##### StopTimeSpan
 Stop the bot execution at the time. The time span is calculated from the official event start time. If you set this parameter to -0:05:00 then repeat operation will be stopped 5 minutes before the official event start time. The positive value 0:05:00 means that repeat operation will be stopped 5 minutes after the event start time.
-**UseExecuteImmediately**
+##### UseExecuteImmediately
 Set to True if you want to execute the action bot immediately without evaluating TimeSpanType and StartTimeSpan parameters.
-**UseExecuteOnNewMarketsOnly**
+##### UseExecuteOnNewMarketsOnly
 Set to True if you want to execute the action bot only on new markets. Use this parameter when executing your action bots by "Market Auto Open" tool.
-**UseSetMarketInactive**
+##### UseSetMarketInactive
 When the bot is executed in the Bot Executor tool then setting market inactive state will open the market in the Bet Event view.
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.
 # Place SP Bet
-**BetType**
+##### BetType
 The type of your bet, back or lay.
-**Odds**
+##### Odds
 The odds you want to place your bet at. If you want to place your bet on the exact odds set the parameter PlaceBetInAllowedOddsRange to False.
-**LimitOdds**
+##### LimitOdds
 The limit odds for your SP bet. Bets are matched if, and only if, the returned starting price is better than a specified price. In the case of back bets, LOC bets are matched if the calculated starting price is greater than the specified price. In the case of lay bets, LOC bets are matched if the starting price is less than the specified price.
-**PersistenceType**
+##### PersistenceType
 The bet persistence: Cancel, Keep or Take SP.
-**Stake**
+##### Stake
 Your SP bet stake liability.
-**StakeType**
+##### StakeType
 Stake type: Stake, Liability, TickProfit, NetTickProfit
-**SortSelectionsBy**
+##### SortSelectionsBy
 Set to sort selections by last traded price or total matched volume.
-**ExecuteOnSelection**
+##### ExecuteOnSelection
 The selection on which you want to execute your bot. If set to 0 the bot is executed on the active selection in the market grid view. If set to 1 .. X, the bot is executed on X favorite or X selection depending on how you set the parameter SortSelectionsBy.
-**EvaluateEntryCriteriaOnlyOnce**
+##### EvaluateEntryCriteriaOnlyOnce
 Set this parameter to True if you want to evaluate the entry criteria only once.
-**StopMarketMonitoring**
+##### StopMarketMonitoring
 Set this parameter to True if you want to stop the market monitoring after the bot stops its execution. The market monitoring is stopped only when no other bot is active on the market.
-**StrategyReference**
+##### StrategyReference
 Set to specify which strategy has sent the bet. The string is limited to 15 characters.

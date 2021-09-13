@@ -38,10 +38,10 @@ let rec listBotParameters (anObj : obj) (writer : StreamWriter) =
             |> Option.iter (fun customAttribute ->                    
                     if isNullObj customAttribute.Description
                     then
-                        writer.WriteLine($"#### {property.Name}")
+                        writer.WriteLine($"### {property.Name}")
                         writer |> listBotParameters property.PropertyType
                     else
-                        writer.WriteLine($"**{property.Name}**")
+                        writer.WriteLine($"##### {property.Name}")
                         writer.WriteLine(customAttribute.Description)
                 )
         )
