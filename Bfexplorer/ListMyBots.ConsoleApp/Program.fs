@@ -1,4 +1,13 @@
-﻿open System
+﻿(*
+    Markdown format used:
+
+    https://guides.github.com/features/mastering-markdown/
+
+    Name of the bot: #
+    Name of the parameter: ##
+*)
+
+open System
 open System.ComponentModel.DataAnnotations
 open System.IO
 
@@ -29,22 +38,29 @@ let rec listBotParameters (anObj : obj) (writer : StreamWriter) =
             |> Option.iter (fun customAttribute ->                    
                     if isNullObj customAttribute.Description
                     then
-                        writer.WriteLine($"## {property.Name}")
+                        writer.WriteLine($"#### {property.Name}")
                         writer |> listBotParameters property.PropertyType
                     else
-                        writer.WriteLine($"## {property.Name}")
+                        writer.WriteLine($"**{property.Name}**")
                         writer.WriteLine(customAttribute.Description)
                 )
         )
 
 [<EntryPoint>]
-let main _argv =
+let main argv =
     let bfexplorerService = BfexplorerService(initializeBotManager = true)
 
     let myBots = bfexplorerService.BotManager.MyBots
+
+    let getFilePathName() =
+        if argv.Length = 1
+        then
+            Path.Combine(argv.[0], "MyBots.md")
+        else
+            @"..\..\..\Output\MyBots.md"
     
     try
-        use writer = File.AppendText(@"..\..\..\Output\MyBots.md")
+        use writer = File.AppendText(getFilePathName())
 
         myBots
         |> List.iter (fun boDesriptor -> 
