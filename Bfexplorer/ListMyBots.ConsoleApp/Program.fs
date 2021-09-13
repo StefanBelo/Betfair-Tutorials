@@ -52,7 +52,7 @@ let main argv =
 
     let myBots = bfexplorerService.BotManager.MyBots
 
-    let getFilePathName() =
+    let filePathName =
         if argv.Length = 1
         then
             Path.Combine(argv.[0], "MyBots.md")
@@ -60,7 +60,7 @@ let main argv =
             @"..\..\..\Output\MyBots.md"
     
     try
-        use writer = File.AppendText(getFilePathName())
+        use writer = File.CreateText(filePathName)
 
         myBots
         |> List.iter (fun boDesriptor -> 
