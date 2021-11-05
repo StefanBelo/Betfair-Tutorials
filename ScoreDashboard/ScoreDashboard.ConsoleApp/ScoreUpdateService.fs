@@ -13,6 +13,8 @@ open BeloSoft.Bfexplorer.Domain
 open BeloSoft.Bfexplorer.Service
 open BeloSoft.Bfexplorer.Trading
 
+#nowarn "40"
+
 /// <summary>
 /// ScoreUpdateService
 /// </summary>
@@ -84,7 +86,7 @@ type ScoreUpdateService() =
                 let filter = [ BetEventFilterParameter.BetEventTypeIds [| 1 |]; BetEventFilterParameter.Countries [| "GB" |]; BetEventFilterParameter.MarketTypeCodes [| "MATCH_ODDS" |] ]
 
                 (* Tennis
-                let filter = [ BetEventFilterParameter.BetEventTypeIds [| 2 |]; BetEventFilterParameter.MarketTypeCodes [| "MATCH_ODDS" |]; ]
+                let filter = [ BetEventFilterParameter.BetEventTypeIds [| 2 |]; BetEventFilterParameter.MarketTypeCodes [| "MATCH_ODDS" |] ]
                 *)
 
                 return! marketUpdateService.Subscribe(filter)
